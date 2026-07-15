@@ -55,7 +55,9 @@ window.INVITATION_CONFIG = {
 
         gallery: [
             "foto2.jpeg",
-            "foto3.jpeg"
+            "foto3.jpeg",
+            "foto4.jpeg",
+            "foto5.jpeg"
         ]
     }
 
