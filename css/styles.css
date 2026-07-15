@@ -1797,3 +1797,80 @@ fieldset.form-field {
     }
 
 }
+/*======================================
+FOOTER
+======================================*/
+
+.footer{
+
+    padding:40px 20px;
+
+    background:#4f3e34;
+
+    color:#ffffff;
+
+    text-align:center;
+
+}
+
+.footer__brand{
+
+    margin:0;
+
+    font-size:.82rem;
+
+    letter-spacing:.08em;
+
+}
+
+.footer__brand strong{
+
+    font-weight:600;
+
+}
+
+.footer__social{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    margin-top:18px;
+
+}
+
+.footer__social a{
+
+    width:46px;
+    height:46px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    transition:.30s;
+
+}
+
+.footer__social a:hover{
+
+    transform:translateY(-4px);
+
+    background:#876e5d;
+
+}
+
+.footer__social img{
+
+    width:22px;
+    height:22px;
+
+    filter:brightness(0) invert(1);
+
+}
