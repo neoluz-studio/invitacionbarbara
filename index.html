@@ -1,691 +1,693 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, viewport-fit=cover"
-    >
 
-    <meta
-        name="description"
-        content="Invitación digital para los XV de Georgina."
-    >
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+>
 
-    <meta name="theme-color" content="#ffffff">
+<meta
+    name="description"
+    content="Invitación digital para los XV de Bárbara Jazmín Merlo Mariani."
+>
 
-    <title>Mis XV Georgina</title>
+<meta name="theme-color" content="#ffffff">
 
-    <!-- Tipografías -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<title>Mis XV Bárbara</title>
 
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
+<!-- Tipografías -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
-        rel="stylesheet"
-    >
+<link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+>
 
-    <!-- Estilos principales -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="data:,">
+<link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+>
+<link rel="icon" href="data:,">
+<link rel="shortcut icon" href="data:,">
+<!-- Estilos principales -->
+<link rel="stylesheet" href="css/styles.css">
+
+
+
 </head>
 
 <body class="no-scroll">
 
-    <!-- ======================================================
-         PANTALLA DE INGRESO
-    ======================================================= -->
+<!-- ======================================================
+     PANTALLA DE INGRESO
+======================================================= -->
 
-    <div
-        id="welcome"
-        class="welcome"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="welcomeTitle"
-        aria-describedby="welcomeSubtitle"
-    >
-        <div class="welcome__content">
-
-            <h1
-                id="welcomeTitle"
-                class="welcome__title"
-            >
-                Mis XV Georgina
-            </h1>
-
-            <p
-                id="welcomeSubtitle"
-                class="welcome__subtitle"
-            >
-                QUIERO QUE SEAS PARTE DE ESTE MOMENTO TAN IMPORTANTE PARA MÍ
-            </p>
-
-            <button
-                id="enterBtn"
-                class="btn btn--welcome"
-                type="button"
-            >
-                INGRESAR
-            </button>
-
-        </div>
-    </div>
-
-
-    <!-- ======================================================
-         CONTROL DE MÚSICA
-    ======================================================= -->
-
-    <button
-        id="musicBtn"
-        class="music-btn"
-        type="button"
-        aria-label="Reproducir música"
-        aria-pressed="false"
-        hidden
-    >
-        <span aria-hidden="true">♪</span>
-    </button>
-
-    <audio
-        id="music"
-        loop
-        preload="metadata"
-    ></audio>
-
-
-    <!-- ======================================================
-         CONTENIDO PRINCIPAL
-    ======================================================= -->
-
-    <main
-        id="invitation"
-        class="invitation"
-        aria-hidden="true"
-    >
-
-        <!-- ==================================================
-             PORTADA PRINCIPAL
-        =================================================== -->
-
-        <section
-            id="hero"
-            class="hero section-dark"
-            aria-label="Portada de la invitación"
-        >
-            <img
-                id="heroImage"
-                class="hero__img"
-                src="assets/images/foto1.jpeg"
-                alt="Fotografía de portada de Georgina"
-                fetchpriority="high"
-                decoding="async"
-            >
-
-            <div
-                class="hero__shade"
-                aria-hidden="true"
-            ></div>
-
-            
-        </section>
-
-
-        <!-- ==================================================
-             CUENTA REGRESIVA
-        =================================================== -->
-
-        <!-- ==================================================
-     PRESENTACIÓN + CUENTA REGRESIVA
-=================================================== -->
-
-<section
-    class="event-intro"
-    aria-label="Presentación y cuenta regresiva"
+<div
+    id="welcome"
+    class="welcome"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="welcomeTitle"
+    aria-describedby="welcomeSubtitle"
 >
+    <div class="welcome__content">
 
-    <div class="event-intro__header reveal">
+        <h1
+            id="welcomeTitle"
+            class="welcome__title"
+        >
+            Mis XV Bárbara
+        </h1>
 
-        <span class="event-intro__eyebrow">
-            MIS XV
-        </span>
+        <p
+            id="welcomeSubtitle"
+            class="welcome__subtitle"
+        >
+            QUIERO QUE SEAS PARTE DE ESTE MOMENTO TAN IMPORTANTE PARA MÍ
+        </p>
 
-        <h2 class="event-intro__name">
-            Georgina
-        </h2>
-
-        
+        <button
+            id="enterBtn"
+            class="btn btn--welcome"
+            type="button"
+        >
+            INGRESAR
+        </button>
 
     </div>
-
-
-    <div class="section-inner reveal">
-
-        <div
-            id="countdown"
-            class="countdown"
-            aria-live="polite"
-            aria-atomic="true"
-        >
-
-            <div class="countdown__item">
-                <strong id="days">00</strong>
-                <span>DÍAS</span>
-            </div>
-
-            <div class="countdown__item">
-                <strong id="hours">00</strong>
-                <span>HORAS</span>
-            </div>
-
-            <div class="countdown__item">
-                <strong id="minutes">00</strong>
-                <span>MINUTOS</span>
-            </div>
-
-            <div class="countdown__item">
-                <strong id="seconds">00</strong>
-                <span>SEGUNDOS</span>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-        <!-- ==================================================
-             PRIMERA FRASE
-        =================================================== -->
-
-        <section class="phrase section-light">
-
-            <div
-                class="ornament"
-                aria-hidden="true"
-            ></div>
-
-            <h3
-                id="firstPhrase"
-                class="reveal"
-            ></h3>
-
-            <div
-                class="ornament"
-                aria-hidden="true"
-            ></div>
-
-        </section>
-
-
-        <!-- ==================================================
-             PRIMERA GALERÍA
-        =================================================== -->
-
-        <section
-            id="galleryOne"
-            class="gallery section-light"
-            aria-label="Primera galería de fotografías"
-        ></section>
-
-
-        <!-- ==================================================
-             FECHA Y UBICACIÓN
-        =================================================== -->
-
-        <section
-            class="details section-dark"
-            aria-label="Información del evento"
-        >
-
-            <article class="detail reveal">
-
-                <img
-                    src="assets/icons/calendar.svg"
-                    alt=""
-                    class="detail__icon"
-                    loading="lazy"
-                    decoding="async"
-                    aria-hidden="true"
-                >
-
-                <h4>¿CUÁNDO?</h4>
-
-                <p id="dateLabel"></p>
-
-                <span id="timeLabel"></span>
-
-            </article>
-
-
-            <article class="detail reveal">
-
-                <img
-                    src="assets/icons/location.svg"
-                    alt=""
-                    class="detail__icon"
-                    loading="lazy"
-                    decoding="async"
-                    aria-hidden="true"
-                >
-
-                <h4>¿DÓNDE?</h4>
-
-                <p id="venueName"></p>
-
-                <a
-                    id="mapsLink"
-                    class="btn btn--outline"
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    CÓMO LLEGAR
-                </a>
-
-            </article>
-
-        </section>
-
-
-        <!-- ==================================================
-             SEGUNDA GALERÍA
-        =================================================== -->
-
-        <section
-            id="galleryTwo"
-            class="gallery section-light"
-            aria-label="Segunda galería de fotografías"
-        ></section>
-
-
-        <!-- ==================================================
-             FRASE CENTRAL
-        =================================================== -->
-
-        <section class="phrase phrase--dark section-dark">
-
-            <div
-                class="ornament"
-                aria-hidden="true"
-            ></div>
-
-            <h3
-                id="middlePhrase"
-                class="reveal"
-            ></h3>
-
-            <div
-                class="ornament"
-                aria-hidden="true"
-            ></div>
-
-        </section>
-
-
-        <!-- ==================================================
-             DRESS CODE
-        =================================================== -->
-
-        <section
-            class="feature section-light"
-            aria-labelledby="dressCodeTitle"
-        >
-
-            <img
-                src="assets/icons/dress.svg"
-                alt=""
-                class="feature__icon reveal"
-                loading="lazy"
-                decoding="async"
-                aria-hidden="true"
-            >
-
-            <span
-                id="dressCodeTitle"
-                class="feature__label"
-            >
-                DRESS CODE
-            </span>
-
-            <h4
-                id="dressCode"
-                class="reveal"
-            ></h4>
-
-        </section>
-
-
-        <!-- ==================================================
-             REGALOS
-        =================================================== -->
-
-        <section
-            class="feature section-dark"
-            aria-labelledby="giftsTitle"
-        >
-
-            <img
-                src="assets/icons/gift.svg"
-                alt=""
-                class="feature__icon reveal"
-                loading="lazy"
-                decoding="async"
-                aria-hidden="true"
-            >
-
-            <h5 id="giftsTitle">
-                REGALOS
-            </h5>
-
-            <p
-                id="giftIntro"
-                class="feature__copy reveal"
-            ></p>
-
-            <button
-                id="giftOpen"
-                class="btn btn--light"
-                type="button"
-            >
-                VER CUENTA
-            </button>
-
-        </section>
-
-
-        <!-- ==================================================
-             INSTAGRAM / HASHTAG
-        =================================================== -->
-
-        <section
-    class="feature section-light"
-    id="album"
-    aria-labelledby="photosTitle"
->
-
-    <img
-        src="assets/icons/camera.svg"
-        alt=""
-        class="feature__icon reveal"
-    >
-
-    <span class="feature__subtitle reveal">
-        COMPARTÍ TUS RECUERDOS
-    </span>
-
-    <h5
-        id="photosTitle"
-        class="reveal"
-    >
-        SUBÍ Y MIRÁ LAS FOTOS DEL EVENTO
-    </h5>
-
-    <p class="feature__copy reveal">
-        Escaneá el código QR o tocá el botón para acceder al álbum compartido.
-        También vas a poder subir las fotos que saques durante la fiesta.
-    </p>
-
-    <img
-        src="assets/images/qrcode.png"
-        alt="QR del álbum"
-        class="album-qr reveal"
-    >
-
-    <a
-        href="https://photos.app.goo.gl/kT1SzjnxeuCEFr319"
-        target="_blank"
-        rel="noopener"
-        class="btn btn--dark reveal"
-    >
-        VER ÁLBUM
-    </a>
-
-</section>
-
-
-        <!-- ==================================================
-             CONFIRMACIÓN DE ASISTENCIA
-        =================================================== -->
-
-        <section
-            id="confirmacion"
-            class="rsvp-section section-dark"
-            aria-labelledby="rsvpTitle"
-        >
-            <div class="rsvp-section__inner">
-
-                <img
-                    src="assets/icons/check.svg"
-                    alt=""
-                    class="feature__icon reveal"
-                    loading="lazy"
-                    decoding="async"
-                    aria-hidden="true"
-                >
-
-                <h2
-                    id="rsvpTitle"
-                    class="rsvp-section__title reveal"
-                >
-                    CONFIRMÁ TU ASISTENCIA
-                </h2>
-
-                <p class="rsvp-section__deadline reveal">
-                    ANTES DEL
-                    <strong id="deadline"></strong>
-                </p>
-
-                <p class="rsvp-section__intro reveal">
-                    Completá tus datos para confirmar tu lugar.
-                </p>
-
-
-                <!-- FORMULARIO -->
-
-                <form
-                    id="rsvpForm"
-                    class="rsvp-form reveal"
-                    autocomplete="on"
-                >
-
-                    <!-- Campo oculto contra bots -->
-
-                    <div
-                        class="form-honeypot"
-                        aria-hidden="true"
-                    >
-                        <label for="website">
-                            No completar
-                        </label>
-
-                        <input
-                            id="website"
-                            name="website"
-                            type="text"
-                            tabindex="-1"
-                            autocomplete="off"
-                        >
-                    </div>
-
-
-                    <div class="form-grid">
-
-                        <!-- NOMBRE PRINCIPAL -->
-
-                        <div class="form-field">
-
-                            <label for="guestName">
-                                Nombre y apellido
-                            </label>
-
-                            <input
-                                id="guestName"
-                                name="nombre"
-                                type="text"
-                                placeholder="Ej.: María González"
-                                autocomplete="name"
-                                maxlength="80"
-                                required
-                            >
-
-                        </div>
-
-
-                        <!-- TELÉFONO -->
-
-                        <div class="form-field">
-
-                            <label for="guestPhone">
-                                Teléfono
-                            </label>
-
-                            <input
-                                id="guestPhone"
-                                name="telefono"
-                                type="tel"
-                                placeholder="Ej.: 11 2345 6789"
-                                autocomplete="tel"
-                                inputmode="tel"
-                                maxlength="30"
-                                required
-                            >
-
-                        </div>
-
-
-                        <!-- ASISTENCIA -->
-
-                        <fieldset class="form-field form-field--full">
-
-                            <legend>
-                                ¿Vas a asistir?
-                            </legend>
-
-                            <div class="form-options">
-
-                                <label class="form-option">
-
-                                    <input
-                                        type="radio"
-                                        name="asistencia"
-                                        value="Sí"
-                                        required
-                                    >
-
-                                    <span>
-                                        Sí, voy a asistir
-                                    </span>
-
-                                </label>
-
-
-                                <label class="form-option">
-
-                                    <input
-                                        type="radio"
-                                        name="asistencia"
-                                        value="No"
-                                        required
-                                    >
-
-                                    <span>
-                                        No voy a poder asistir
-                                    </span>
-
-                                </label>
-
-                            </div>
-
-                        </fieldset>
-
-
-                        <!-- ==================================
-                             DATOS DE LOS ASISTENTES
-                        =================================== -->
-
-                        <div
-                            id="attendanceFields"
-                            class="form-dependent-fields form-field--full is-hidden"
-                            hidden
-                        >
-
-                            <!-- CANTIDAD DE PERSONAS -->
-
-                            <div class="form-field form-field--full">
-
-    <label for="guestCount">
-        Seleccioná la cantidad de personas
-    </label>
-
-    <select
-    id="guestCount"
-    name="cantidadPersonas"
->
-        <option value="" selected disabled>
-            Seleccionar cantidad
-        </option>
-
-        <option value="1">
-            1 persona
-        </option>
-
-        <option value="2">
-            2 personas
-        </option>
-
-        <option value="3">
-            3 personas
-        </option>
-
-        <option value="4">
-            4 personas
-        </option>
-
-        <option value="5">
-            5 personas
-        </option>
-
-        <option value="6">
-            6 personas
-        </option>
-    </select>
-
 </div>
 
 
-                            <!-- PERSONA PRINCIPAL -->
+<!-- ======================================================
+     CONTROL DE MÚSICA
+======================================================= -->
 
-                            <div
-                                id="mainGuestCard"
-                                class="guest-card guest-card--main"
-                                hidden
+<button
+    id="musicBtn"
+    class="music-btn"
+    type="button"
+    aria-label="Reproducir música"
+    aria-pressed="false"
+    hidden
+>
+    <span aria-hidden="true">♪</span>
+</button>
+
+<audio
+    id="music"
+    loop
+    preload="metadata"
+></audio>
+
+
+<!-- ======================================================
+     CONTENIDO PRINCIPAL
+======================================================= -->
+
+<main
+    id="invitation"
+    class="invitation"
+    aria-hidden="true"
+>
+
+    <!-- ==================================================
+         PORTADA PRINCIPAL
+    =================================================== -->
+
+    <section
+        id="hero"
+        class="hero section-dark"
+        aria-label="Portada de la invitación"
+    >
+        <img
+            id="heroImage"
+            class="hero__img"
+            src="assets/images/foto1.jpeg"
+            alt="Fotografía de portada de Bárbara"
+            fetchpriority="high"
+            decoding="async"
+        >
+
+        <div
+            class="hero__shade"
+            aria-hidden="true"
+        ></div>
+
+    </section>
+
+
+    <!-- ==================================================
+         PRESENTACIÓN + CUENTA REGRESIVA
+    =================================================== -->
+
+    <section
+        class="event-intro"
+        aria-label="Presentación y cuenta regresiva"
+    >
+
+        <div class="event-intro__header reveal">
+
+            <span class="event-intro__eyebrow">
+                MIS XV
+            </span>
+
+            <h2 class="event-intro__name">
+                BÁRBARA JAZMÍN
+            </h2>
+
+        </div>
+
+
+        <div class="section-inner reveal">
+
+            <div
+                id="countdown"
+                class="countdown"
+                aria-live="polite"
+                aria-atomic="true"
+            >
+
+                <div class="countdown__item">
+                    <strong id="days">00</strong>
+                    <span>DÍAS</span>
+                </div>
+
+                <div class="countdown__item">
+                    <strong id="hours">00</strong>
+                    <span>HORAS</span>
+                </div>
+
+                <div class="countdown__item">
+                    <strong id="minutes">00</strong>
+                    <span>MINUTOS</span>
+                </div>
+
+                <div class="countdown__item">
+                    <strong id="seconds">00</strong>
+                    <span>SEGUNDOS</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         PRIMERA FRASE
+    =================================================== -->
+
+    <section class="phrase section-light">
+
+        <div
+            class="ornament"
+            aria-hidden="true"
+        ></div>
+
+        <h3
+            id="firstPhrase"
+            class="reveal"
+        ></h3>
+
+        <div
+            class="ornament"
+            aria-hidden="true"
+        ></div>
+
+    </section>
+
+
+    <!-- ==================================================
+         PRIMERA GALERÍA
+    =================================================== -->
+
+    <section
+        id="galleryOne"
+        class="gallery section-light"
+        aria-label="Primera galería de fotografías"
+    ></section>
+
+
+    <!-- ==================================================
+         FECHA Y UBICACIÓN
+    =================================================== -->
+
+    <section
+        class="details section-dark"
+        aria-label="Información del evento"
+    >
+
+        <article class="detail reveal">
+
+            <img
+                src="assets/icons/calendar.svg"
+                alt=""
+                class="detail__icon"
+                loading="lazy"
+                decoding="async"
+                aria-hidden="true"
+            >
+
+            <h4>¿CUÁNDO?</h4>
+
+            <p id="dateLabel"></p>
+
+            <span id="timeLabel"></span>
+
+        </article>
+
+
+        <article class="detail reveal">
+
+            <img
+                src="assets/icons/location.svg"
+                alt=""
+                class="detail__icon"
+                loading="lazy"
+                decoding="async"
+                aria-hidden="true"
+            >
+
+            <h4>¿DÓNDE?</h4>
+
+            <p id="venueName"></p>
+
+            <a
+                id="mapsLink"
+                class="btn btn--outline"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                CÓMO LLEGAR
+            </a>
+
+        </article>
+
+    </section>
+
+
+    <!-- ==================================================
+         SEGUNDA GALERÍA
+    =================================================== -->
+
+    <section
+        id="galleryTwo"
+        class="gallery section-light"
+        aria-label="Segunda galería de fotografías"
+    ></section>
+
+
+    <!-- ==================================================
+         FRASE CENTRAL
+    =================================================== -->
+
+    <section class="phrase phrase--dark section-dark">
+
+        <div
+            class="ornament"
+            aria-hidden="true"
+        ></div>
+
+        <h3
+            id="middlePhrase"
+            class="reveal"
+        ></h3>
+
+        <div
+            class="ornament"
+            aria-hidden="true"
+        ></div>
+
+    </section>
+
+
+    <!-- ==================================================
+         DRESS CODE
+    =================================================== -->
+
+    <section
+        class="feature section-light"
+        aria-labelledby="dressCodeTitle"
+    >
+
+        <img
+            src="assets/icons/dress.svg"
+            alt=""
+            class="feature__icon reveal"
+            loading="lazy"
+            decoding="async"
+            aria-hidden="true"
+        >
+
+        <span
+            id="dressCodeTitle"
+            class="feature__label"
+        >
+            DRESS CODE
+        </span>
+
+        <h4
+            id="dressCode"
+            class="reveal"
+        ></h4>
+
+    </section>
+
+
+    <!-- ==================================================
+         REGALOS
+    =================================================== -->
+
+    <section
+        class="feature section-dark"
+        aria-labelledby="giftsTitle"
+    >
+
+        <img
+            src="assets/icons/gift.svg"
+            alt=""
+            class="feature__icon reveal"
+            loading="lazy"
+            decoding="async"
+            aria-hidden="true"
+        >
+
+        <h5 id="giftsTitle">
+            REGALOS
+        </h5>
+
+        <p
+            id="giftIntro"
+            class="feature__copy reveal"
+        ></p>
+
+        <button
+            id="giftOpen"
+            class="btn btn--light"
+            type="button"
+        >
+            VER CUENTA
+        </button>
+
+    </section>
+
+
+    <!-- ==================================================
+         ÁLBUM DE FOTOS
+    =================================================== -->
+
+    <section
+        class="feature section-light"
+        id="album"
+        aria-labelledby="photosTitle"
+    >
+
+        <img
+            src="assets/icons/camera.svg"
+            alt=""
+            class="feature__icon reveal"
+        >
+
+        <span class="feature__subtitle reveal">
+            COMPARTÍ TUS RECUERDOS
+        </span>
+
+        <h5
+            id="photosTitle"
+            class="reveal"
+        >
+            SUBÍ Y MIRÁ LAS FOTOS DEL EVENTO
+        </h5>
+
+        <p class="feature__copy reveal">
+            Escaneá el código QR o tocá el botón para acceder al álbum compartido.
+            También vas a poder subir las fotos que saques durante la fiesta.
+        </p>
+
+        <img
+            src="assets/images/qrcode1.png"
+            alt="QR del álbum"
+            class="album-qr reveal"
+        >
+
+        <a
+            href="https://photos.app.goo.gl/1kLH9TTA7WKNjfPU6"
+            target="_blank"
+            rel="noopener"
+            class="btn btn--dark reveal"
+        >
+            VER ÁLBUM
+        </a>
+
+    </section>
+
+
+    <!-- ==================================================
+         CONFIRMACIÓN DE ASISTENCIA
+    =================================================== -->
+
+    <section
+        id="confirmacion"
+        class="rsvp-section section-dark"
+        aria-labelledby="rsvpTitle"
+    >
+
+        <div class="rsvp-section__inner">
+
+            <img
+                src="assets/icons/check.svg"
+                alt=""
+                class="feature__icon reveal"
+                loading="lazy"
+                decoding="async"
+                aria-hidden="true"
+            >
+
+            <h2
+                id="rsvpTitle"
+                class="rsvp-section__title reveal"
+            >
+                CONFIRMÁ TU ASISTENCIA
+            </h2>
+
+            <p class="rsvp-section__deadline reveal">
+                ANTES DEL
+                <strong id="deadline"></strong>
+            </p>
+
+            <p class="rsvp-section__intro reveal">
+                Completá tus datos para confirmar tu lugar.
+            </p>
+
+
+            <!-- FORMULARIO -->
+
+            <form
+                id="rsvpForm"
+                class="rsvp-form reveal"
+                autocomplete="on"
+            >
+
+                <!-- Campo oculto contra bots -->
+
+                <div
+                    class="form-honeypot"
+                    aria-hidden="true"
+                >
+
+                    <label for="website">
+                        No completar
+                    </label>
+
+                    <input
+                        id="website"
+                        name="website"
+                        type="text"
+                        tabindex="-1"
+                        autocomplete="off"
+                    >
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <!-- NOMBRE PRINCIPAL -->
+
+                    <div class="form-field">
+
+                        <label for="guestName">
+                            Nombre y apellido
+                        </label>
+
+                        <input
+                            id="guestName"
+                            name="nombre"
+                            type="text"
+                            placeholder="Ej.: María González"
+                            autocomplete="name"
+                            maxlength="80"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- TELÉFONO -->
+
+                    <div class="form-field">
+
+                        <label for="guestPhone">
+                            Teléfono
+                        </label>
+
+                        <input
+                            id="guestPhone"
+                            name="telefono"
+                            type="tel"
+                            placeholder="Ej.: 11 2345 6789"
+                            autocomplete="tel"
+                            inputmode="tel"
+                            maxlength="30"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- ASISTENCIA -->
+
+                    <fieldset class="form-field form-field--full">
+
+                        <legend>
+                            ¿Vas a asistir?
+                        </legend>
+
+                        <div class="form-options">
+
+                            <label class="form-option">
+
+                                <input
+                                    type="radio"
+                                    name="asistencia"
+                                    value="Sí"
+                                    required
+                                >
+
+                                <span>
+                                    Sí, voy a asistir
+                                </span>
+
+                            </label>
+
+
+                            <label class="form-option">
+
+                                <input
+                                    type="radio"
+                                    name="asistencia"
+                                    value="No"
+                                    required
+                                >
+
+                                <span>
+                                    No voy a poder asistir
+                                </span>
+
+                            </label>
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <!-- DATOS DE LOS ASISTENTES -->
+
+                    <div
+                        id="attendanceFields"
+                        class="form-dependent-fields form-field--full is-hidden"
+                        hidden
+                    >
+
+                        <!-- CANTIDAD DE PERSONAS -->
+
+                        <div class="form-field form-field--full">
+
+                            <label for="guestCount">
+                                Seleccioná la cantidad de personas
+                            </label>
+
+                            <select
+                                id="guestCount"
+                                name="cantidadPersonas"
                             >
 
-                                <p class="guest-card__title">
-                                    Persona 1
-                                </p>
+                                <option value="" selected disabled>
+                                    Seleccionar cantidad
+                                </option>
 
-                                <div class="guest-card__grid">
+                                <option value="1">
+                                    1 persona
+                                </option>
 
-                                    <div class="form-field">
+                                <option value="2">
+                                    2 personas
+                                </option>
 
-                                        <label for="mainGuestMenu">
-                                            Opción de menú
-                                        </label>
+                                <option value="3">
+                                    3 personas
+                                </option>
 
-                                        <select
+                                <option value="4">
+                                    4 personas
+                                </option>
+
+                                <option value="5">
+                                    5 personas
+                                </option>
+
+                                <option value="6">
+                                    6 personas
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- PERSONA PRINCIPAL -->
+
+                        <div
+                            id="mainGuestCard"
+                            class="guest-card guest-card--main"
+                            hidden
+                        >
+
+                            <p class="guest-card__title">
+                                Persona 1
+                            </p>
+
+                            <div class="guest-card__grid">
+
+                                <div class="form-field">
+
+                                    <label for="mainGuestMenu">
+                                        Opción de menú
+                                    </label>
+
+                                    <select
                                         id="mainGuestMenu"
                                         name="menuPersona1"
                                         required
                                     >
+
                                         <option value="" selected disabled>
                                             Seleccionar menú
                                         </option>
@@ -705,225 +707,235 @@
                                         <option value="Menú infantil">
                                             Menú infantil
                                         </option>
+
                                     </select>
-                                    </div>
+
+                                </div>
 
 
-                                    <div class="form-field">
+                                <div class="form-field">
 
-                                        <label for="mainGuestRestriction">
-                                            Restricción alimentaria
-                                        </label>
+                                    <label for="mainGuestRestriction">
+                                        Restricción alimentaria
+                                    </label>
 
-                                        <textarea
-                                            id="mainGuestRestriction"
-                                            name="restriccionPersona1"
-                                            rows="2"
-                                            maxlength="300"
-                                            placeholder="Opcional"
-                                        ></textarea>
-
-                                    </div>
+                                    <textarea
+                                        id="mainGuestRestriction"
+                                        name="restriccionPersona1"
+                                        rows="2"
+                                        maxlength="300"
+                                        placeholder="Opcional"
+                                    ></textarea>
 
                                 </div>
 
                             </div>
 
-
-                            <!-- PERSONAS 2 EN ADELANTE -->
-
-                            <div
-                                id="additionalGuestsContainer"
-                                class="guests-container"
-                                aria-live="polite"
-                            ></div>
-
                         </div>
 
 
-                        <!-- MÚSICA SUGERIDA -->
+                        <!-- PERSONAS 2 EN ADELANTE -->
 
-                        <div class="form-field form-field--full">
-
-                            <label for="musicSuggestion">
-                                Música que no puede faltar
-                            </label>
-
-                            <textarea
-                                id="musicSuggestion"
-                                name="musica"
-                                rows="4"
-                                maxlength="500"
-                                placeholder="¿Qué canción no puede faltar en la fiesta?"
-                            ></textarea>
-
-                        </div>
+                        <div
+                            id="additionalGuestsContainer"
+                            class="guests-container"
+                            aria-live="polite"
+                        ></div>
 
                     </div>
 
 
-                    <!-- DATOS INTERNOS -->
+                    <!-- MÚSICA SUGERIDA -->
 
-                    <input
-                        id="eventNameField"
-                        name="evento"
-                        type="hidden"
-                    >
+                    <div class="form-field form-field--full">
 
-                    <input
-                        id="eventDateField"
-                        name="fechaEvento"
-                        type="hidden"
-                    >
+                        <label for="musicSuggestion">
+                            Música que no puede faltar
+                        </label>
 
-                    <input
-                        id="submittedAtField"
-                        name="fechaConfirmacion"
-                        type="hidden"
-                    >
+                        <textarea
+                            id="musicSuggestion"
+                            name="musica"
+                            rows="4"
+                            maxlength="500"
+                            placeholder="¿Qué canción no puede faltar en la fiesta?"
+                        ></textarea>
 
+                    </div>
 
-                    <!-- BOTÓN DE ENVÍO -->
-
-                    <button
-                        id="rsvpSubmit"
-                        class="btn btn--light rsvp-form__submit"
-                        type="submit"
-                    >
-                        <span class="submit-text">
-                            ENVIAR CONFIRMACIÓN
-                        </span>
-
-                        <span
-                            class="submit-loader"
-                            aria-hidden="true"
-                        ></span>
-                    </button>
+                </div>
 
 
-                    <!-- ESTADO DEL ENVÍO -->
+                <!-- DATOS INTERNOS -->
 
-                    <p
-                        id="rsvpStatus"
-                        class="rsvp-form__status"
-                        role="status"
-                        aria-live="polite"
-                    ></p>
+                <input
+                    id="eventNameField"
+                    name="evento"
+                    type="hidden"
+                >
 
-                </form>
+                <input
+                    id="eventDateField"
+                    name="fechaEvento"
+                    type="hidden"
+                >
 
-            </div>
-        </section>
-
-
-        <!-- ==================================================
-             PIE
-        =================================================== -->
-
-        <footer class="footer">
-
-    <p class="footer__brand">
-        Diseñado y desarrollado por
-        <strong>NEOLUZ STUDIO</strong>
-    </p>
-
-    <div class="footer__social">
+                <input
+                    id="submittedAtField"
+                    name="fechaConfirmacion"
+                    type="hidden"
+                >
 
 
-        <a
-            href="https://www.instagram.com/neoluz.studio/"
-            target="_blank"
-            rel="noopener"
-            aria-label="Instagram"
-        >
-            <img
-                src="assets/icons/instagram.png"
-                alt="Instagram"
-            >
-        </a>
+                <!-- BOTÓN DE ENVÍO -->
 
-    </div>
+                <button
+                    id="rsvpSubmit"
+                    class="btn btn--light rsvp-form__submit"
+                    type="submit"
+                >
 
-</footer>
-    </main>
+                    <span class="submit-text">
+                        ENVIAR CONFIRMACIÓN
+                    </span>
+
+                    <span
+                        class="submit-loader"
+                        aria-hidden="true"
+                    ></span>
+
+                </button>
 
 
-    <!-- ======================================================
-         VENTANA DE REGALOS
-    ======================================================= -->
+                <!-- ESTADO DEL ENVÍO -->
 
-    <dialog
-        id="giftDialog"
-        class="gift-dialog"
-        aria-labelledby="giftDialogTitle"
-    >
+                <p
+                    id="rsvpStatus"
+                    class="rsvp-form__status"
+                    role="status"
+                    aria-live="polite"
+                ></p>
 
-        <button
-            id="giftClose"
-            class="dialog-close"
-            type="button"
-            aria-label="Cerrar información de regalos"
-        >
-            ×
-        </button>
+            </form>
 
-        <img
-            src="assets/icons/gift-dark.svg"
-            alt=""
-            class="gift-dialog__icon"
-            aria-hidden="true"
-        >
+        </div>
 
-        <span
-            id="giftDialogTitle"
-            class="gift-dialog__title"
-        >
-            REGALOS
-        </span>
+    </section>
 
-        <p class="gift-dialog__label">
-            Alias
+
+    <!-- ==================================================
+         PIE
+    =================================================== -->
+
+    <footer class="footer">
+
+        <p class="footer__brand">
+            Diseñado y desarrollado por
+            <strong>NEOLUZ STUDIO</strong>
         </p>
 
-        <strong id="giftAlias"></strong>
+        <div class="footer__social">
 
-        <small id="giftHolder"></small>
+            <a
+                href="https://www.instagram.com/neoluz.studio/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram"
+            >
 
-        <button
-            id="copyAlias"
-            class="btn btn--dark"
-            type="button"
-        >
-            COPIAR ALIAS
-        </button>
+                <img
+                    src="assets/icons/instagram.png"
+                    alt="Instagram"
+                >
 
-        <em
-            id="copyStatus"
-            aria-live="polite"
-        ></em>
+            </a>
 
-    </dialog>
-
-
-    <!-- ======================================================
-         MENSAJE SIN JAVASCRIPT
-    ======================================================= -->
-
-    <noscript>
-        <div class="noscript-message">
-            Esta invitación necesita JavaScript para mostrar las animaciones,
-            la música, la cuenta regresiva y el formulario de confirmación.
         </div>
-    </noscript>
+
+    </footer>
+
+</main>
 
 
-    <!-- ======================================================
-         JAVASCRIPT
-         config.js debe cargarse antes que app.js
-    ======================================================= -->
+<!-- ======================================================
+     VENTANA DE REGALOS
+======================================================= -->
 
-    <script src="js/config.js"></script>
-    <script src="js/app.js"></script>
+<dialog
+    id="giftDialog"
+    class="gift-dialog"
+    aria-labelledby="giftDialogTitle"
+>
+
+    <button
+        id="giftClose"
+        class="dialog-close"
+        type="button"
+        aria-label="Cerrar información de regalos"
+    >
+        ×
+    </button>
+
+    <img
+        src="assets/icons/gift-dark.svg"
+        alt=""
+        class="gift-dialog__icon"
+        aria-hidden="true"
+    >
+
+    <span
+        id="giftDialogTitle"
+        class="gift-dialog__title"
+    >
+        REGALOS
+    </span>
+
+    <p class="gift-dialog__label">
+        Alias
+    </p>
+
+    <strong id="giftAlias"></strong>
+
+    <small id="giftHolder"></small>
+
+    <button
+        id="copyAlias"
+        class="btn btn--dark"
+        type="button"
+    >
+        COPIAR ALIAS
+    </button>
+
+    <em
+        id="copyStatus"
+        aria-live="polite"
+    ></em>
+
+</dialog>
+
+
+<!-- ======================================================
+     MENSAJE SIN JAVASCRIPT
+======================================================= -->
+
+<noscript>
+
+    <div class="noscript-message">
+        Esta invitación necesita JavaScript para mostrar las animaciones,
+        la música, la cuenta regresiva y el formulario de confirmación.
+    </div>
+
+</noscript>
+
+
+<!-- ======================================================
+     JAVASCRIPT
+     config.js debe cargarse antes que app.js
+======================================================= -->
+
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+
 
 </body>
 </html>
