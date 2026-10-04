@@ -4,7 +4,7 @@ window.INVITATION_CONFIG = {
         name: "Bárbara",
         eyebrow: "MIS XV",
         date: "2026-10-24T21:30:00-03:00",
-        deadline: "5 DE OCTUBRE 2026"
+        deadline: "10 DE OCTUBRE 2026"
     },
 
     welcome: {
@@ -29,7 +29,7 @@ window.INVITATION_CONFIG = {
     dressCode: "Elegante Sport",
 
     gifts: {
-        intro: "Nada es más importante que tu presencia, pero si deseas hacerme un presente puedes depositarlo en la siguiente cuenta.",
+        intro: "Su presencia es lo más importante en este día tan especial, por eso no es necesario ningún regalo. Para quienes deseen tener un detalle, pueden hacerlo de la manera que prefieran, ya sea con un obsequio o mediante el siguiente alias:",
         alias: "bar.merlo.mp",
         holder: "Bárbara Jazmín Merlo Mariani"
     },
